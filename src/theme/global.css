@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "Roboto";
+    src: url("./../assets/fonts/roboto/roboto-v30-latin-300.woff2");
+    font-weight: 300;
+    font-display: block;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("./../assets/fonts/roboto/roboto-v30-latin-regular.woff2");
+    font-weight: normal;
+    font-display: auto;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("./../assets/fonts/roboto/roboto-v30-latin-700.woff2");
+    font-weight: 700;
+    font-display: auto;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    min-height: 100vh;
+    font-size: 16px;
+    font-family: "IranYekan";
+    direction: ltr;
+    text-align: justify;
+}
+
+* {
+    scroll-behavior: smooth;
+    font-variant-numeric: tabular-nums;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e5e7eb;
+    border-radius: 50px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 20px 0;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rc-slider-rail {
+    background-color: #E0E0E0 !important;
+    height: 12px !important;
+    border-radius: 8px !important;
+    @media screen and (max-width: 768px) {
+        height: 8px !important;
+    }
+}
+
+.rc-slider-track {
+    height: 12px !important;
+    border-radius: 8px !important;
+    background-color: #7839EE !important;
+    @media screen and (max-width: 768px) {
+        height: 8px !important;
+    }
+}
+
+.rc-slider-handle {
+    width: 40px !important;
+    height: 40px !important;
+    margin-top: -15px !important;
+    opacity: 1 !important;
+    border: 10px solid #7839EE !important;
+    background-color: #E0E0E0 !important;
+    box-shadow: none !important;
+    @media screen and (max-width: 768px) {
+        width: 24px !important;
+        height: 24px !important;
+        border: 5px solid #7839EE !important;
+        margin-top: -9px !important;
+    }
+}
+
+.rc-slider-handle:active {
+    box-shadow: none !important;
+}
+
+.guideStep-gradient {
+    background-image: linear-gradient(0deg, rgba(120, 57, 238, 1) 0%, rgba(120, 57, 238, 0.21612394957983194) 100%);
+}
+
+.stars img {
+    margin-right: 4px !important;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
